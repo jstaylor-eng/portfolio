@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jamie Taylor - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Jamie Taylor
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jstaylor.eng@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +44 7941 699 708
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://img.freepik.com/free-photo/portrait-man-cartoon-style_23-2151133939.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Jamie Taylor! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a mechanical engineer with 12 years experience across R&D, test, and operations.
+            I regularly use python to automate day to day tasks and am looking to make the transition to work in software instead. 
+            I have some previous knowlege of JavaScript, and C++ from a few Arduino projects.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+
+        <div class="skill">
+          <img src="html_finalprojimages/python.jpeg"/>
+          <h6>Python</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>0 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>0 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node</h6>
+            <p>0 years experience</p>
+        </div> 
+        
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>0 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>0 years experience</p>
+        </div> 
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Arduino apartment door sensor and opener</h3>
+            <ul>
+              <li>Used an arduino and current shunt to sense when apartment intercomm was pressed, and send notificaiton to my phone. Had button on phone to trigger a relay from the arduino, which unlocked the appartment block door, bypassing manual door open button.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Temperature forecast storage heating setter</h3>
+            <ul>
+              <li>Used a python script to look up next day temperature forecast and output a percentage of heating required for the next days temperature. Arduino then adjusted manual storage heater dials to apropriate value.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Python API scripts</h3>
+            <ul>
+              <li>Scripts to batch process manufacturing data to assign naming and contract provioning for company product. APIs across various comms providers for cellular, Iridium LEO constelation, and various GEO satcom providers.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jamie can do lots of stuff and gets on with people well.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Jamie is probably mostly ok. 
+          Sometimes he is probably a bit too much of a perfectionist which can be annoying when we want stuff completed and out the door quickly.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Jamie for 4 years as we scaled up from an R&D project to a tech startup. Jamie did lots of roles slightly above average in this time.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Well done, you wrote something and pressed a button, have a gold star!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
